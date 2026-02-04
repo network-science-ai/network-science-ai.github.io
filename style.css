@@ -29,9 +29,9 @@ header .container {
 
 .header-logo {
     position: absolute;
-    top: 0.25rem;
-    right: 20px;
-    width: 120px;
+    top: 0.1rem;
+    right: 0px;
+    width: 250px;
     height: auto;
     z-index: 1;
 }
@@ -168,6 +168,11 @@ footer {
     justify-items: center;
 }
 
+.logos.centered {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
 .logo-placeholder img {
     border-radius: 8px;
     border: none;
@@ -269,6 +274,13 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.12);
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
+}
+
+.job-logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 0.75rem;
 }
 
 .job-listing::after {
