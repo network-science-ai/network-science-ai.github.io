@@ -73,8 +73,28 @@ nav a.active {
 }
 
 main {
-    padding: 3rem 0;
+    padding: 0rem 0;
     min-height: calc(100vh - 200px);
+}
+
+.logo-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0rem 20px;
+    background: white;
+}
+
+.logo-row-image {
+    width: 200px;
+    height: auto;
+}
+
+.main-logo-right {
+    position: absolute;
+    right: -90px;
+    top: 0;
+    width: 200px;
+    height: auto;
 }
 
 section {
