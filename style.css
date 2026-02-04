@@ -132,6 +132,12 @@ footer {
 }
 
 /* Logos Section */
+.logo-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .logos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -229,6 +235,60 @@ footer {
 .break-section h3 {
     color: #856404;
     margin: 0;
+}
+
+/* Job Listings */
+.job-listing {
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.job-listing::after {
+    content: '';
+    position: absolute;
+    bottom: -2.5rem;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #ddd, transparent);
+}
+
+.job-listing:last-of-type::after {
+    display: none;
+}
+
+.job-listing:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+}
+
+.job-listing h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #000000;
+    font-size: 1.5rem;
+}
+
+.job-listing p {
+    margin-bottom: 0.75rem;
+}
+
+.job-listing a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.job-listing a:hover {
+    color: #2980b9;
+    text-decoration: underline;
 }
 
 /* Responsive Design */
