@@ -293,12 +293,14 @@ footer {
     border-radius: 10px;
     overflow: hidden;
     flex: 0 0 auto;
+    width: 200px;
+    height: 200px;
 }
 
 .speaker-photo img {
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -340,8 +342,8 @@ footer {
 }
 
 .social-link {
-    width: 14px;
-    height: 14px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     border: 1px solid #d5dadd;
     display: inline-flex;
@@ -359,8 +361,8 @@ footer {
 }
 
 .social-link svg {
-    width: 5px;
-    height: 5px;
+    width: 18px;
+    height: 18px;
 }
 
 .speaker-schedule {
