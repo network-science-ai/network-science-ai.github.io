@@ -380,6 +380,80 @@ footer {
     text-decoration: underline;
 }
 
+/* Home speakers list */
+.speaker-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+    justify-items: center;
+}
+
+.speaker-list-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    background: #f8f9fa;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 260px;
+}
+
+.speaker-list-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #e6ebf0;
+    flex: 0 0 auto;
+}
+
+.speaker-list-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.speaker-list-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.speaker-list-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.2rem;
+}
+
+.speaker-list-affiliation {
+    font-size: 0.95rem;
+    color: #67707a;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.speaker-list-talk {
+    font-size: 0.96rem;
+    color: #555;
+}
+
+.speaker-list-talk a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.speaker-list-talk a:hover {
+    text-decoration: underline;
+}
+
 .schedule-table .affiliation {
     font-size: 0.9rem;
     color: #777;
