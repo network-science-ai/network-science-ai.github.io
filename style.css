@@ -271,8 +271,13 @@ footer {
 /* Speakers */
 .speakers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+}
+
+.speakers-page .speakers-grid {
+    display: flex;
+    flex-direction: column;
 }
 
 .speaker-card {

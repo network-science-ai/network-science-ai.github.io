@@ -84,16 +84,16 @@ const NSIA_SPEAKERS = [
     },
     {
         id: "speaker-4",
-        name: "Speaker TBC",
-        title: "Title TBC",
-        affiliation: "Affiliation TBC",
-        bio: "Short bio TBC.",
-        photo: "images/speaker-placeholder.svg",
+        name: "Nataša Pržulj",
+        title: "",
+        affiliation: "Mohamed Bin Zayed University of Artificial Intelligence (MBZUAI)",
+        bio: "Professor Pržulj is a leader in biological network analysis and a pioneer in network biology geometry applied to personalized (precision) medicine. In 2004, she introduced graphlets to extract biomedical knowledge from molecular networks, revolutionizing the field. Graphlets are a basis of many AI methodologies to produce feature vectors and matrices capturing network topology that are inputted into many AI/ML algorithms for network data analytics in various domains. They are the subject of around 23,000 research papers and hundreds of patents according to Google Scholar. Professor Pržulj’s current research focuses on developing new AI methods for multi-omics data fusion applied to precision medicine and discovery of precision therapeutics.",
+        photo: "images/natasa.jpeg",
         links: {
             x: "",
             linkedin: "",
-            website: "",
-            googleScholar: ""
+            website: "https://mbzuai.ac.ae/study/faculty/natasa-przulj-2/",
+            googleScholar: "https://scholar.google.com/citations?user=mLIsLdAAAAAJ&hl=en"
         },
         slotId: "slot-invited-1715"
     },
