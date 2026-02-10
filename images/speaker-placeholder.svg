@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Speaker placeholder">
+  <rect width="400" height="300" fill="#e6eaee"/>
+  <circle cx="200" cy="115" r="55" fill="#c7d0d9"/>
+  <rect x="85" y="190" width="230" height="70" rx="35" fill="#c7d0d9"/>
+  <rect x="120" y="230" width="160" height="18" rx="9" fill="#b6c0c9"/>
+</svg>
