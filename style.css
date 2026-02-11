@@ -27,15 +27,6 @@ header .container {
     position: relative;
 }
 
-.header-logo {
-    position: absolute;
-    top: 0.1rem;
-    right: 0px;
-    width: 250px;
-    height: auto;
-    z-index: 1;
-}
-
 header h1 {
     margin-bottom: 0.5rem;
 }
