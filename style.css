@@ -618,3 +618,47 @@ footer {
     color: #555;
     margin-top: 1rem;
 }
+
+
+/* --- Header Layout & Logo Styling --- */
+
+/* Align Logo and Text side-by-side */
+.header-flex {
+    display: flex;
+    align-items: center; /* Vertically centers the logo with the text */
+    justify-content: flex-start; /* Aligns everything to the left */
+    margin-bottom: 20px; /* Space between the header content and the nav bar */
+}
+
+/* Logo Styling */
+.header-logo {
+    height: 100px;         /* Adjust this size as needed */
+    width: 100px;          /* Width must match height for a perfect circle */
+    object-fit: cover;     /* Ensures the image fills the circle without stretching */
+    border-radius: 50%;    /* Makes the logo round */
+    border: 2px solid #ddd;/* Optional: Adds a subtle border around the circle */
+    margin-right: 20px;    /* Space between logo and text */
+    display: block;
+}
+
+/* Text Styling */
+.header-text {
+    text-align: left;
+}
+
+.header-text h1 {
+    margin: 0;
+    line-height: 1.2;
+    /* You might want to adjust font-size here if it looks too big */
+}
+
+.header-text p {
+    margin: 5px 0 0 0;
+    font-size: 1.1em;
+}
+
+/* Ensure Nav starts on a new line and spans full width */
+header nav {
+    width: 100%;
+    clear: both;
+}
