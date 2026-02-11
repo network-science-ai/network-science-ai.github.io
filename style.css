@@ -630,6 +630,7 @@ footer {
     border: 2px solid #ddd;/* Optional: Adds a subtle border around the circle */
     margin-right: 20px;    /* Space between logo and text */
     display: block;
+    background-color: white;
 }
 
 /* Text Styling */
