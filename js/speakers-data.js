@@ -39,16 +39,16 @@ const NSIA_INVITED_TALKS = [
 const NSIA_SPEAKERS = [
     {
         id: "speaker-1",
-        name: "Speaker TBC",
-        title: "Title TBC",
-        affiliation: "Affiliation TBC",
-        bio: "Short bio TBC.",
-        photo: "images/speaker-placeholder.svg",
+        name: "Yong Li",
+        title: "",
+        affiliation: "Tsinghua University",
+        bio: "Dr. Yong Li is a Faculty Member of the Department of Electronic Engineering, Tsinghua University. His research interests are in the area of artificial intelligence, data science, and mobile computing.",
+        photo: "images/yongli.jpg",
         links: {
             x: "",
             linkedin: "",
-            website: "",
-            googleScholar: ""
+            website: "https://fi.ee.tsinghua.edu.cn/~liyong/",
+            googleScholar: "https://scholar.google.com/citations?user=kmgzPeQAAAAJ&hl=en"
         },
         slotId: "slot-invited-1415"
     },
