@@ -30,6 +30,12 @@
         );
     };
 
+    const getLastName = (fullName) => {
+        if (!fullName) return "";
+        const parts = fullName.trim().split(/\s+/);
+        return parts[parts.length - 1];
+    };
+
     const renderSpeakers = () => {
         const grid = document.getElementById("speakers-grid");
         if (!grid) {
@@ -38,7 +44,15 @@
 
         grid.innerHTML = "";
 
-        NSIA_SPEAKERS.filter(isSpeakerComplete).forEach((speaker) => {
+        const sortedSpeakers = NSIA_SPEAKERS
+            .filter(isSpeakerComplete)
+            .sort((a, b) => {
+                const lastNameA = getLastName(a.name).toLowerCase();
+                const lastNameB = getLastName(b.name).toLowerCase();
+                return lastNameA.localeCompare(lastNameB);
+            });
+
+        sortedSpeakers.forEach((speaker) => {
             const talk = talksById[speaker.slotId];
             const card = document.createElement("article");
             card.className = "speaker-card";
@@ -87,7 +101,7 @@
 
             const scheduleMarkup = talk
                 ? `<div class="speaker-schedule">
-                      <a href="schedule.html#${talk.id}">Invited talk: ${talk.title} (${talk.time})</a>
+                      Invited talk: ${talk.title} (${talk.time})
                   </div>`
                 : "";
 

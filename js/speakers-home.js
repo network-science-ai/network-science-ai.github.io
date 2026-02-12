@@ -22,15 +22,25 @@
         return acc;
     }, {});
 
+    const getLastName = (fullName) => {
+        if (!fullName) return "";
+        const parts = fullName.trim().split(/\s+/);
+        return parts[parts.length - 1];
+    };
+
     const speakers = NSIA_SPEAKERS.filter((speaker) => {
         return hasRealText(speaker.name) && hasRealText(speaker.affiliation);
+    }).sort((a, b) => {
+        const lastNameA = getLastName(a.name).toLowerCase();
+        const lastNameB = getLastName(b.name).toLowerCase();
+        return lastNameA.localeCompare(lastNameB);
     });
 
     list.innerHTML = speakers
         .map((speaker) => {
             const talk = talksBySpeakerId[speaker.id];
             const talkTitle = talk && talk.title ? talk.title : "Talk TBC";
-            const talkLink = talk && talk.id ? "schedule.html#" + talk.id : "schedule.html";
+            // const talkLink = talk && talk.id ? "schedule.html#" + talk.id : "schedule.html";
             const photo = speaker.photo ? speaker.photo : "images/speaker-placeholder.svg";
             return (
                 "<article class=\"speaker-list-item\">" +
@@ -40,7 +50,7 @@
                     "<div class=\"speaker-list-body\">" +
                         "<div class=\"speaker-list-name\">" + speaker.name + "</div>" +
                         "<div class=\"speaker-list-affiliation\">" + speaker.affiliation + "</div>" +
-                        "<div class=\"speaker-list-talk\"><a href=\"" + talkLink + "\">" + talkTitle + "</a></div>" +
+                        "<div class=\"speaker-list-talk\">" + talkTitle + "</div>" +
                     "</div>" +
                 "</article>"
             );
