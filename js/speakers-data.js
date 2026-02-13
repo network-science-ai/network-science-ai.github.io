@@ -42,7 +42,7 @@ const NSIA_SPEAKERS = [
         name: "Yong Li",
         title: "",
         affiliation: "Tsinghua University",
-        bio: "Dr. Yong Li is a Faculty Member of the Department of Electronic Engineering, Tsinghua University. His research interests are in the area of artificial intelligence, data science, and mobile computing.",
+        bio: "Professor Yong Li is a Faculty Member of the Department of Electronic Engineering, Tsinghua University. His research interests are in the area of artificial intelligence, data science, and mobile computing.",
         photo: "images/yongli.jpg",
         links: {
             x: "",
@@ -69,16 +69,16 @@ const NSIA_SPEAKERS = [
     },
     {
         id: "speaker-3",
-        name: "Speaker TBC",
-        title: "Title TBC",
-        affiliation: "Affiliation TBC",
-        bio: "Short bio TBC.",
-        photo: "images/speaker-placeholder.svg",
+        name: "Giovanni Petri",
+        title: "",
+        affiliation: "Northeastern University London",
+        bio: "Professor Giovanni Petri's main research focus is on the theoretical and empirical analysis of complex systems, with an emphasis on the structural and temporal properties of networks with higher‐order interactions and feedback dynamics. It also includes social contagion and team dynamics, the investigation of whole‐brain activation patterns, and the structure of cognitive representations in natural and syntethic neural architectures, with particular reference to their topological structure, merging statistical physics approach, algebraic topology and data analysis.",
+        photo: "images/petri.png",
         links: {
-            x: "",
-            linkedin: "",
-            website: "",
-            googleScholar: ""
+            x: "https://x.com/lordgrilo",
+            linkedin: "https://www.linkedin.com/in/giovannipetri",
+            website: "https://lordgrilo.github.io/",
+            googleScholar: "https://scholar.google.co.uk/citations?user=jb__2PIAAAAJ&hl=en"
         },
         slotId: "slot-invited-1630"
     },
