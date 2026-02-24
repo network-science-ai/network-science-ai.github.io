@@ -101,7 +101,7 @@
 
             const scheduleMarkup = talk
                 ? `<div class="speaker-schedule">
-                      Invited talk: ${talk.title} (${talk.time})
+                      Invited talk: ${talk.title}
                   </div>`
                 : "";
 
