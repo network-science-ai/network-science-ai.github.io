@@ -17,7 +17,7 @@ const NSIA_INVITED_TALKS = [
         id: "slot-invited-1630",
         session: "Session II",
         time: "16:30 - 17:00",
-        title: "Title TBC",
+        title: "The Cost of Sharing: From Topological Multitasking Limits to Semantic Horizons",
         speakerId: "speaker-3"
     },
     {
@@ -70,7 +70,7 @@ const NSIA_SPEAKERS = [
     {
         id: "speaker-3",
         name: "Giovanni Petri",
-        title: "The Cost of Sharing: From Topological Multitasking Limits to Semantic Horizons",
+        title: "",
         affiliation: "Northeastern University London",
         bio: "Professor Giovanni Petri's main research focus is on the theoretical and empirical analysis of complex systems, with an emphasis on the structural and temporal properties of networks with higher‐order interactions and feedback dynamics. It also includes social contagion and team dynamics, the investigation of whole‐brain activation patterns, and the structure of cognitive representations in natural and syntethic neural architectures, with particular reference to their topological structure, merging statistical physics approach, algebraic topology and data analysis.",
         photo: "images/petri.png",
