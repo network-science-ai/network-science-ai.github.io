@@ -39,19 +39,20 @@ const NSIA_INVITED_TALKS = [
 const NSIA_SPEAKERS = [
     {
         id: "speaker-1",
-        name: "Yong Li",
+        name: "Tomaso Poggio",
         title: "",
-        affiliation: "Tsinghua University",
-        bio: "Professor Yong Li is a Faculty Member of the Department of Electronic Engineering, Tsinghua University. His research interests are in the area of artificial intelligence, data science, and mobile computing.",
-        photo: "images/yongli.jpg",
+        affiliation: "MIT",
+        bio: "Tomaso Poggio is one of the founders of computational neuroscience. He pioneered a model of the fly’s visual system as well as of human stereovision. His research has always been interdisciplinary, bridging brains and computers. It is now focused on the mathematics of deep learning and on the computational neuroscience of the visual cortex. Poggio also introduced using an approach called regularization theory to computational vision, made key contributions to the biophysics of computation and to learning theory, and developed an influential model of recognition in the visual cortex. Research in the Poggio lab is guided by the belief that understanding learning is at the heart of understanding both biological and artificial intelligence. Learning is therefore the route to understanding how the human brain works and for making intelligent machines.",
+        photo: "images/poggio.png",
         links: {
             x: "",
             linkedin: "",
-            website: "https://fi.ee.tsinghua.edu.cn/~liyong/",
-            googleScholar: "https://scholar.google.com/citations?user=kmgzPeQAAAAJ&hl=en"
+            website: "https://mcgovern.mit.edu/profile/tomaso-poggio/",
+            googleScholar: "https://scholar.google.com/citations?user=WgAGy7wAAAAJ&hl=en"
         },
         slotId: "slot-invited-1415"
     },
+    
     {
         id: "speaker-2",
         name: "Rebekka Burkholz",
@@ -61,7 +62,7 @@ const NSIA_SPEAKERS = [
         photo: "images/burkholz.jpeg",
         links: {
             x: "",
-            linkedin: "https://www.linkedin.com/in/rebekka-burkholz-68375311a",
+            // linkedin: "https://www.linkedin.com/in/rebekka-burkholz-68375311a",
             website: "https://sites.google.com/view/rebekkaburkholz/",
             googleScholar: "https://scholar.google.com/citations?user=vkWBb2wAAAAJ&hl=de"
         },
@@ -75,8 +76,8 @@ const NSIA_SPEAKERS = [
         bio: "Professor Giovanni Petri's main research focus is on the theoretical and empirical analysis of complex systems, with an emphasis on the structural and temporal properties of networks with higher‐order interactions and feedback dynamics. It also includes social contagion and team dynamics, the investigation of whole‐brain activation patterns, and the structure of cognitive representations in natural and syntethic neural architectures, with particular reference to their topological structure, merging statistical physics approach, algebraic topology and data analysis.",
         photo: "images/petri.png",
         links: {
-            x: "https://x.com/lordgrilo",
-            linkedin: "https://www.linkedin.com/in/giovannipetri",
+            // x: "https://x.com/lordgrilo",
+            // linkedin: "https://www.linkedin.com/in/giovannipetri",
             website: "https://lordgrilo.github.io/",
             googleScholar: "https://scholar.google.co.uk/citations?user=jb__2PIAAAAJ&hl=en"
         },
@@ -99,16 +100,16 @@ const NSIA_SPEAKERS = [
     },
     {
         id: "speaker-5",
-        name: "Speaker TBC",
-        title: "Title TBC",
-        affiliation: "Affiliation TBC",
-        bio: "Short bio TBC.",
-        photo: "images/speaker-placeholder.svg",
+        name: "Yong Li",
+        title: "",
+        affiliation: "Tsinghua University",
+        bio: "Professor Yong Li is a Faculty Member of the Department of Electronic Engineering, Tsinghua University. His research interests are in the area of artificial intelligence, data science, and mobile computing.",
+        photo: "images/yongli.jpg",
         links: {
             x: "",
             linkedin: "",
-            website: "",
-            googleScholar: ""
+            website: "https://fi.ee.tsinghua.edu.cn/~liyong/",
+            googleScholar: "https://scholar.google.com/citations?user=kmgzPeQAAAAJ&hl=en"
         },
         slotId: "slot-invited-1800"
     }
