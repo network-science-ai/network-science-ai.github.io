@@ -62,7 +62,7 @@ const NSIA_SPEAKERS = [
         photo: "images/burkholz.jpeg",
         links: {
             x: "",
-            // linkedin: "https://www.linkedin.com/in/rebekka-burkholz-68375311a",
+            linkedin: "https://www.linkedin.com/in/rebekka-burkholz-68375311a",
             website: "https://sites.google.com/view/rebekkaburkholz/",
             googleScholar: "https://scholar.google.com/citations?user=vkWBb2wAAAAJ&hl=de"
         },
@@ -76,8 +76,8 @@ const NSIA_SPEAKERS = [
         bio: "Professor Giovanni Petri's main research focus is on the theoretical and empirical analysis of complex systems, with an emphasis on the structural and temporal properties of networks with higher‐order interactions and feedback dynamics. It also includes social contagion and team dynamics, the investigation of whole‐brain activation patterns, and the structure of cognitive representations in natural and syntethic neural architectures, with particular reference to their topological structure, merging statistical physics approach, algebraic topology and data analysis.",
         photo: "images/petri.png",
         links: {
-            // x: "https://x.com/lordgrilo",
-            // linkedin: "https://www.linkedin.com/in/giovannipetri",
+            x: "https://x.com/lordgrilo",
+            linkedin: "https://www.linkedin.com/in/giovannipetri",
             website: "https://lordgrilo.github.io/",
             googleScholar: "https://scholar.google.co.uk/citations?user=jb__2PIAAAAJ&hl=en"
         },
