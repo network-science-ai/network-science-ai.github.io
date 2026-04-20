@@ -31,9 +31,16 @@ const NSIA_INVITED_TALKS = [
         id: "slot-invited-1800",
         session: "Session II",
         time: "18:00 - 18:30",
-        title: "Title TBC",
+        title: "Representation Learning and Physics",
         speakerId: "speaker-5"
     }
+    // {
+    //     id: "slot-invited-1845",
+    //     session: "Session II",
+    //     time: "18:45 - 19:15",
+    //     title: "Title TBC",
+    //     speakerId: "speaker-6"
+    // }
 ];
 
 const NSIA_SPEAKERS = [
@@ -99,7 +106,7 @@ const NSIA_SPEAKERS = [
         slotId: "slot-invited-1715"
     },
     {
-        id: "speaker-5",
+        id: "speaker-6",
         name: "Yong Li",
         title: "",
         affiliation: "Tsinghua University",
@@ -110,6 +117,21 @@ const NSIA_SPEAKERS = [
             linkedin: "",
             website: "https://fi.ee.tsinghua.edu.cn/~liyong/",
             googleScholar: "https://scholar.google.com/citations?user=kmgzPeQAAAAJ&hl=en"
+        },
+        slotId: "slot-invited-1845"
+    },
+    {
+        id: "speaker-5",
+        name: "Michael Williams",
+        title: "",
+        affiliation: "Tsinghua University",
+        bio: "Professor Williams is the founder and leader of the LHCb group at MIT and the inaugural Deputy Director of the NSF AI Institute for Artificial Intelligence and Fundamental Interactions (IAIFI). He is primarily focused on searching for as-yet-unknown particles and forces, possibly components of the dark sector of matter, and on studying largely unexplored emergent properties of QCD. The LHCb group at MIT is a leader in the LHCb real-time data-processing system. To enable his scientific pursuits, Mike also works on advancing the usage of machine learning algorithms and other state-of-the-art data-science tools within the domain of particle physics research, and on advancing our understanding of AI itself.",
+        photo: "images/williams.jpg",
+        links: {
+            x: "",
+            linkedin: "",
+            website: "https://physics.mit.edu/faculty/michael-williams/",
+            googleScholar: ""
         },
         slotId: "slot-invited-1800"
     }

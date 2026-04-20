@@ -173,15 +173,35 @@ footer {
 
 .logos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 2rem;
     justify-items: center;
 }
 
 .logos.centered {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+
+.logos.centered .logo-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 calc(45% - 1rem);
+    max-width: calc(45% - 1rem);
+}
+
+.logos.centered.gold-sponsor .logo-placeholder {
+    flex: 0 1 100%;
+    max-width: 100%;
+}
+
+.logos.centered .logo-placeholder img {
+    max-width: 100%;
+    height: auto;
 }
 
 .logo-placeholder img {
@@ -552,6 +572,11 @@ footer {
     
     .logos {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logos.centered .logo-placeholder {
+        flex: 0 1 100%;
+        max-width: 100%;
     }
 }
 
