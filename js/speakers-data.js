@@ -105,21 +105,21 @@ const NSIA_SPEAKERS = [
         },
         slotId: "slot-invited-1715"
     },
-    {
-        id: "speaker-6",
-        name: "Yong Li",
-        title: "",
-        affiliation: "Tsinghua University",
-        bio: "Professor Yong Li is a Faculty Member of the Department of Electronic Engineering, Tsinghua University. His research interests are in the area of artificial intelligence, data science, and mobile computing.",
-        photo: "images/yongli.jpg",
-        links: {
-            x: "",
-            linkedin: "",
-            website: "https://fi.ee.tsinghua.edu.cn/~liyong/",
-            googleScholar: "https://scholar.google.com/citations?user=kmgzPeQAAAAJ&hl=en"
-        },
-        slotId: "slot-invited-1845"
-    },
+    // {
+    //     id: "speaker-6",
+    //     name: "Yong Li",
+    //     title: "",
+    //     affiliation: "Tsinghua University",
+    //     bio: "Professor Yong Li is a Faculty Member of the Department of Electronic Engineering, Tsinghua University. His research interests are in the area of artificial intelligence, data science, and mobile computing.",
+    //     photo: "images/yongli.jpg",
+    //     links: {
+    //         x: "",
+    //         linkedin: "",
+    //         website: "https://fi.ee.tsinghua.edu.cn/~liyong/",
+    //         googleScholar: "https://scholar.google.com/citations?user=kmgzPeQAAAAJ&hl=en"
+    //     },
+    //     slotId: "slot-invited-1845"
+    // },
     {
         id: "speaker-5",
         name: "Michael Williams",
