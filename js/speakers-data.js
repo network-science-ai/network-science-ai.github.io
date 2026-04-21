@@ -124,7 +124,7 @@ const NSIA_SPEAKERS = [
         id: "speaker-5",
         name: "Michael Williams",
         title: "",
-        affiliation: "Tsinghua University",
+        affiliation: "MIT",
         bio: "Professor Williams is the founder and leader of the LHCb group at MIT and the inaugural Deputy Director of the NSF AI Institute for Artificial Intelligence and Fundamental Interactions (IAIFI). He is primarily focused on searching for as-yet-unknown particles and forces, possibly components of the dark sector of matter, and on studying largely unexplored emergent properties of QCD. The LHCb group at MIT is a leader in the LHCb real-time data-processing system. To enable his scientific pursuits, Mike also works on advancing the usage of machine learning algorithms and other state-of-the-art data-science tools within the domain of particle physics research, and on advancing our understanding of AI itself.",
         photo: "images/williams.jpg",
         links: {
