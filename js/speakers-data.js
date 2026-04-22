@@ -3,7 +3,7 @@ const NSIA_INVITED_TALKS = [
         id: "slot-invited-1415",
         session: "Session I",
         time: "14:15 - 14:45",
-        title: "Title TBC",
+        title: "Compositional Sparsity",
         speakerId: "speaker-1"
     },
     {
