@@ -24,7 +24,7 @@ const NSIA_INVITED_TALKS = [
         id: "slot-invited-1715",
         session: "Session II",
         time: "17:15 - 17:45",
-        title: "Title TBC",
+        title: "Simplicity Within Biological Complexity",
         speakerId: "speaker-4"
     },
     {
