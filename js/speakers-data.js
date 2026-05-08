@@ -3,44 +3,42 @@ const NSIA_INVITED_TALKS = [
         id: "slot-invited-1415",
         session: "Session I",
         time: "14:15 - 14:45",
-        title: "Compositional Sparsity",
-        speakerId: "speaker-1"
+        title: "Simplicity Within Biological Complexity",
+        speakerId: "speaker-4",
+        slidesUrl: ""
     },
     {
         id: "slot-invited-1500",
         session: "Session I",
         time: "15:00 - 15:30",
         title: "Smarter and Sparser AI with Complex Network Science",
-        speakerId: "speaker-2"
+        speakerId: "speaker-2",
+        slidesUrl: ""
     },
     {
         id: "slot-invited-1630",
         session: "Session II",
-        time: "16:30 - 17:00",
-        title: "The Cost of Sharing: From Topological Multitasking Limits to Semantic Horizons",
-        speakerId: "speaker-3"
+        time: "17:00 - 17:30",
+        title: "Representation Learning and Physics",
+        speakerId: "speaker-5",
+        slidesUrl: ""
     },
     {
         id: "slot-invited-1715",
         session: "Session II",
-        time: "17:15 - 17:45",
-        title: "Simplicity Within Biological Complexity",
-        speakerId: "speaker-4"
+        time: "17:45 - 18:15",
+        title: "Compositional Sparsity",
+        speakerId: "speaker-1",
+        slidesUrl: ""
     },
     {
         id: "slot-invited-1800",
-        session: "Session II",
-        time: "18:00 - 18:30",
-        title: "Representation Learning and Physics",
-        speakerId: "speaker-5"
+        session: "Session I",
+        time: "15:45 - 16:00",
+        title: "The Cost of Sharing: From Topological Multitasking Limits to Semantic Horizons",
+        speakerId: "speaker-3",
+        slidesUrl: ""
     }
-    // {
-    //     id: "slot-invited-1845",
-    //     session: "Session II",
-    //     time: "18:45 - 19:15",
-    //     title: "Title TBC",
-    //     speakerId: "speaker-6"
-    // }
 ];
 
 const NSIA_SPEAKERS = [

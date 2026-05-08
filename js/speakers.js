@@ -143,6 +143,7 @@
             const timeCell = row.querySelector(".time");
             const titleCell = row.querySelector(".talk-title");
             const speakerCell = row.querySelector(".speaker");
+            const slidesCell = row.querySelector(".slides");
 
             if (!talk) {
                 if (timeCell) {
@@ -175,6 +176,14 @@
                     `;
                 } else {
                     speakerCell.textContent = "Speaker TBC";
+                }
+            }
+
+            if (slidesCell) {
+                if (talk.slidesUrl) {
+                    slidesCell.innerHTML = `<a href="${talk.slidesUrl}" target="_blank" rel="noopener">Slides</a>`;
+                } else {
+                    slidesCell.textContent = "Slides-TBC";
                 }
             }
         });

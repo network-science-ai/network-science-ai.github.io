@@ -483,6 +483,22 @@ footer {
     white-space: nowrap;
 }
 
+.schedule-table .slides {
+    white-space: nowrap;
+    min-width: 110px;
+    color: #333;
+}
+
+.schedule-table .slides a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.schedule-table .slides a:hover {
+    text-decoration: underline;
+}
+
 .break-section {
     text-align: center;
     padding: 1.5rem 0;
