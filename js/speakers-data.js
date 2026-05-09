@@ -16,7 +16,15 @@ const NSIA_INVITED_TALKS = [
         slidesUrl: ""
     },
     {
-        id: "slot-invited-1630",
+        id: "slot-invited-1545",
+        session: "Session I",
+        time: "15:45 - 16:15",
+        title: "The Cost of Sharing: From Topological Multitasking Limits to Semantic Horizons",
+        speakerId: "speaker-3",
+        slidesUrl: ""
+    },
+      {
+        id: "slot-invited-1700",
         session: "Session II",
         time: "17:00 - 17:30",
         title: "Representation Learning and Physics",
@@ -24,19 +32,11 @@ const NSIA_INVITED_TALKS = [
         slidesUrl: ""
     },
     {
-        id: "slot-invited-1715",
+        id: "slot-invited-1745",
         session: "Session II",
         time: "17:45 - 18:15",
         title: "Compositional Sparsity",
         speakerId: "speaker-1",
-        slidesUrl: ""
-    },
-    {
-        id: "slot-invited-1800",
-        session: "Session I",
-        time: "15:45 - 16:00",
-        title: "The Cost of Sharing: From Topological Multitasking Limits to Semantic Horizons",
-        speakerId: "speaker-3",
         slidesUrl: ""
     }
 ];
@@ -55,7 +55,7 @@ const NSIA_SPEAKERS = [
             website: "https://mcgovern.mit.edu/profile/tomaso-poggio/",
             googleScholar: "https://scholar.google.com/citations?user=WgAGy7wAAAAJ&hl=en"
         },
-        slotId: "slot-invited-1415"
+        slotId: "slot-invited-1745" 
     },
     
     {
@@ -86,7 +86,7 @@ const NSIA_SPEAKERS = [
             website: "https://lordgrilo.github.io/",
             googleScholar: "https://scholar.google.co.uk/citations?user=jb__2PIAAAAJ&hl=en"
         },
-        slotId: "slot-invited-1630"
+        slotId: "slot-invited-1545"
     },
     {
         id: "speaker-4",
@@ -101,7 +101,7 @@ const NSIA_SPEAKERS = [
             website: "https://mbzuai.ac.ae/study/faculty/natasa-przulj-2/",
             googleScholar: "https://scholar.google.com/citations?user=mLIsLdAAAAAJ&hl=en"
         },
-        slotId: "slot-invited-1715"
+        slotId: "slot-invited-1415"
     },
     // {
     //     id: "speaker-6",
@@ -131,6 +131,6 @@ const NSIA_SPEAKERS = [
             website: "https://physics.mit.edu/faculty/michael-williams/",
             googleScholar: ""
         },
-        slotId: "slot-invited-1800"
+        slotId: "slot-invited-1700"
     }
 ];
