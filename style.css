@@ -40,17 +40,19 @@ header h1 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap; /* allow nav items to flow to a second row */
 }
 
 nav a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 4px;
-    white-space: nowrap;
-    font-size: 1.05rem;
+    white-space: normal; /* allow wrapping to multiple lines */
+    font-size: 1.02rem;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -66,6 +68,11 @@ nav a.active {
 main {
     padding: 0rem 0;
     min-height: calc(100vh - 200px);
+}
+
+/* Ensure fragment targets and headings are visible below the fixed header */
+html {
+    scroll-padding-top: 100px;
 }
 
 .logo-row {
@@ -370,6 +377,154 @@ footer {
     transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
+/* Posters / Talks cards (compact, square-like) */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 0.8rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.card-photo {
+    flex: 0 0 140px;
+    width: 140px;
+    height: 140px;
+    background: #f1f5f8;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #233042;
+    margin: 0 0 0.25rem 0;
+}
+
+.card-meta {
+    font-size: 0.92rem;
+    color: #55626a;
+    font-style: italic;
+}
+
+.card-abstract {
+    margin-top: 0.6rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.card-actions {
+    margin-top: 0.6rem;
+}
+
+.card-actions a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1rem;
+}
+
+.poster-card {
+    align-items: stretch;
+    min-height: 170px;
+    scroll-margin-top: 100px;
+}
+
+.poster-preview {
+    flex: 0 0 120px;
+    width: 120px;
+    height: 90px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.6rem;
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 0.92rem;
+    line-height: 1.2;
+}
+
+.poster-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.poster-preview iframe,
+.poster-preview embed,
+.poster-preview object {
+    width: 190%;
+    height: 190%;
+    border: 0;
+    display: block;
+    transform: translate(-24%, -24%);
+}
+
+.poster-preview {
+    overflow: hidden;
+}
+
+.poster-preview.placeholder {
+    text-transform: none;
+}
+
+.poster-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #233042;
+    margin-bottom: 0.3rem;
+}
+
+.poster-author {
+    font-size: 0.92rem;
+    color: #55626a;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.poster-abstract {
+    font-size: 0.93rem;
+    color: #444;
+}
+
+.small-note {font-size:0.9rem;color:#666;margin-top:0.75rem}
+
 .social-link:hover {
     background: #2c3e50;
     color: #fff;
@@ -499,6 +654,20 @@ footer {
     text-decoration: underline;
 }
 
+/* Schedule talk title links: non-blue, underlined like speaker links */
+.schedule-table .talk-title a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Underline contributed-talk title links only on hover */
+.schedule-table .talk-title a[href*="talk-contrib-"]:hover {
+    text-decoration: underline;
+}
+
+.schedule-table .talk-title a[href*="slot-invited-"]:hover {
+    text-decoration: underline;
+}
 .break-section {
     text-align: center;
     padding: 1.5rem 0;
@@ -694,4 +863,30 @@ footer {
 header nav {
     width: 100%;
     clear: both;
+}
+
+/* Surgical fix: uniform column widths for both schedule tables */
+.schedule-table {
+    table-layout: fixed;
+    width: 100%;
+}
+.schedule-table th,
+.schedule-table td {
+    overflow-wrap: break-word;
+}
+.schedule-table th:nth-child(1), /* Time column */
+.schedule-table td:nth-child(1) {
+    width: 15%;
+}
+.schedule-table th:nth-child(2), /* Title column */
+.schedule-table td:nth-child(2) {
+    width: 40%;
+}
+.schedule-table th:nth-child(3), /* Speaker column */
+.schedule-table td:nth-child(3) {
+    width: 30%;
+}
+.schedule-table th:nth-child(4), /* Type column */
+.schedule-table td:nth-child(4) {
+    width: 15%;
 }
