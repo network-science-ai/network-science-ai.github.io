@@ -19,10 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
         <h2>Gold Sponsor</h2>
         <div class="logo-rows">
             <div class="logos centered gold-sponsor">
-                <div class="logo-placeholder">
-                    <img src="images/sparsemind.png" alt="Sparsemind AI" style="max-width: 360px; width: 100%; height: auto; background: #eee; display: block;">
-                </div>
-            </div>
+    <div class="logo-placeholder">
+        <a href="https://www.sparsemindai.com/?lang=en" target="_blank" rel="noopener noreferrer">
+            <img src="images/sparsemind.png" alt="Sparsemind AI" style="max-width: 360px; width: 100%; height: auto; background: #eee; display: block;">
+        </a>
+    </div>
+</div>
         </div>
         <h2>Sponsors</h2>
         <div class="logo-rows">
