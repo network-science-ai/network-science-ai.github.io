@@ -30,10 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="logo-rows">
             <div class="logos centered">
                 <div class="logo-placeholder">
-                    <img src="images/output_CCNI_transparent.png" alt="Center for Complex Network Intelligence" style="height: 150px; width: auto; background: #eee; display: block;">
+                    <a href="https://brain.tsinghua.edu.cn/en/Research1/Research_Centers/Complex_Network_Intelligence_Center.htm" target="_blank" rel="noopener noreferrer">
+                        <img src="images/output_CCNI_transparent.png" alt="Center for Complex Network Intelligence" style="height: 150px; width: auto; background: #eee; display: block;">
+                    </a>
                 </div>
                 <div class="logo-placeholder">
-                    <img src="images/thbi3.png" alt="Tsinghua Laboratory of Brain and Intelligence" style="width: 250px; height: 150px; background: #eee; display: block;">
+                    <a href="https://brain.tsinghua.edu.cn/en/index.htm" target="_blank" rel="noopener noreferrer">
+                        <img src="images/thbi3.png" alt="Tsinghua Laboratory of Brain and Intelligence" style="width: 250px; height: 150px; background: #eee; display: block;">
+                    </a>
                 </div>
             </div>
             <div class="logos centered">

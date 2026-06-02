@@ -439,6 +439,17 @@ footer {
     color: #444;
 }
 
+.card-award {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #856404;
+    background-color: #fff3cd;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
 .card-actions {
     margin-top: 0.6rem;
 }
