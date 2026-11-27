@@ -47,7 +47,7 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: background-color 0.3s;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
     white-space: normal; /* allow wrapping to multiple lines */
@@ -55,9 +55,11 @@ nav a {
     display: inline-block;
 }
 
-nav a:hover {
-    color: #000000;
-    background: rgba(255, 255, 255, 0.1);
+/* Keep the text white on the dark banner; the lighter background marks the item */
+nav a:hover,
+nav a:focus-visible {
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 nav a.active {
