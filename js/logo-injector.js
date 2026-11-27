@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="logos centered">
                 <div class="logo-placeholder">
-                    <img src="images/thups2.png" alt="Tsinghua University Press" style="width: 400px; height: 80px; background: #eee; display: block;">
+                    <img src="images/thups2.png" alt="Department of Psychological and Cognitive Sciences, Tsinghua University" style="width: 400px; height: 80px; background: #eee; display: block;">
                 </div>
                 <div class="logo-placeholder">
-                    <img src="images/thucs.png" alt="Tsinghua University" style="width: 350px; height: 120px; background: #eee; display: block;">
+                    <img src="images/thucs.png" alt="Department of Computer Science and Technology, Tsinghua University" style="width: 350px; height: 120px; background: #eee; display: block;">
                 </div>
             </div>
         </div>
