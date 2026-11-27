@@ -77,16 +77,75 @@ html {
     scroll-padding-top: 100px;
 }
 
-.logo-row {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0rem 20px;
-    background: white;
+/* Space above the page content, the same on every page. The NetSci logo
+   (js/logo-injector.js, static on 2026.html) sits in it at the right edge
+   of the content column. The logo is out of the flow and sized to fit the
+   band, so it never changes where the content starts. */
+main.container {
+    --logo-band: 5.5rem;
+    position: relative;
+    padding-top: var(--logo-band);
 }
 
+.logo-row {
+    position: absolute;
+    top: 0;
+    right: 20px; /* the container's side padding */
+    height: var(--logo-band);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Sized by height so it always fits the band */
 .logo-row-image {
-    width: 200px;
-    height: auto;
+    display: block;
+    height: 3rem;
+    width: auto;
+}
+
+/* The NetSci 2026 image already includes "Boston 2026" and has wide white
+   margins (2026.html) */
+.logo-row-image.with-edition {
+    height: 5rem;
+}
+
+/* The NetSciX 2027 image already includes "Hong Kong | 2027" */
+.logo-row-image.netscix {
+    height: 4rem;
+}
+
+/* Small phones: shrink both logos so the pair fits the content width */
+@media (max-width: 400px) {
+    .logo-row {
+        gap: 1rem;
+    }
+
+    .logo-row-image {
+        height: 2.5rem;
+    }
+
+    .logo-row-image.netscix {
+        height: 3.25rem;
+    }
+
+    .logo-row-caption {
+        font-size: 0.9rem;
+    }
+}
+
+/* NetSci 2027 logo (plain SVG mark) with the edition written underneath */
+.logo-row-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-row-caption {
+    color: #d1232a;
+    font-size: 1.05rem;
+    line-height: 1.2;
 }
 
 .main-logo-right {

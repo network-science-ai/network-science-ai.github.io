@@ -5,10 +5,20 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
+    // NetSciX 2027 and NetSci 2027 logos at the top right of the page
+    // content, in date order. style.css reserves the space for them, so
+    // they never move the content.
     const logoRow = document.createElement('div');
     logoRow.className = 'logo-row';
-    logoRow.innerHTML = '<img src="images/netsci4.png" alt="NetSci 2026" class="logo-row-image">';
-    main.parentNode.insertBefore(logoRow, main);
+    logoRow.innerHTML =
+        '<a href="https://netscix2027.github.io/" target="_blank" rel="noopener" class="logo-row-link">' +
+            '<img src="images/netscix2027-logo.png" alt="NetSciX 2027 Hong Kong" class="logo-row-image netscix">' +
+        '</a>' +
+        '<a href="https://netsci2027.github.io/" target="_blank" rel="noopener" class="logo-row-link">' +
+            '<img src="images/netsci2027-logo.svg" alt="NetSci 2027" class="logo-row-image">' +
+            '<span class="logo-row-caption">Dresden 2027</span>' +
+        '</a>';
+    main.insertBefore(logoRow, main.firstChild);
 
     const sponsorsSlot = document.querySelector('[data-sponsors]');
     if (!sponsorsSlot) {
